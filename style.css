@@ -1,0 +1,43 @@
+/*Define light theme*/
+:root{
+    --background-color: #fff;
+    --text-color: #333;
+    --button-bg-color: #eee;
+    --button-text-color: #333;
+}
+
+/*Define default Dark Theme*/
+.dark-theme{
+    --background-color:#333;
+    --text-color:#fff;
+    --button-bg-color: #555;
+    --button-text-color:#fff;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover{
+    background-color: var(--button-text-color);
+    color: var(--button-bg-color);
+}
